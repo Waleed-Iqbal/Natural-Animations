@@ -5,111 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="bootstrap.min.css" />
-    <link rel="stylesheet" href="styles.min.css" />
+		<link rel="stylesheet" href="styles.min.css" />
+
+		<script src="./script.js"></script>
+
     <title>Natural Animation</title>
   </head>
   <body>
-    <section class="alternating-background inspiration-source-material text-center">
+    <section
+      class="alternating-background inspiration-source-material text-center"
+    >
       <h1 class="section-heading pt-3">Inspired by / source material</h1>
       <img class="mt-3 w-50" src="./book.png" alt="The Illusion of Life" />
     </section>
 
-    <section class="alternating-background session-content-list border-top border-secondary pt-3 pl-5">
-			<div class="text-center">
-				<h1 class="display-3 font-weight-bold">12 rules of animation</h1>
-				<h3> An attempt to translate them in web</h3>
-			</div>
-			<ol class="py-4">
-				<li>Squash and stretch</li>
-				<li>Anticipation</li>
-				<li>Staging</li>
-				<li>Straight ahead action and pose to pose</li>
-				<li>Follow through and overlapping action</li>
-				<li>Slow in and slow out</li>
-				<li>Arc</li>
-				<li>Secondary action</li>
-				<li>Timing</li>
-				<li>Exaggeration</li>
-				<li>Solid drawing</li>
-				<li>Appeal</li>
-			</ol>
-		</section>
+    <section
+      class="alternating-background session-content-list border-top border-secondary pt-3 pl-5"
+    >
+      <div class="text-center">
+        <h1 class="display-3 font-weight-bold">12 rules of animation</h1>
+        <h3>An attempt to translate them in web</h3>
+      </div>
+      <ol class="py-4">
+        <li>Squash and stretch</li>
+        <li>Anticipation</li>
+        <li>Staging</li>
+        <li>Straight ahead action and pose to pose</li>
+        <li>Follow through and overlapping action</li>
+        <li>Slow in and slow out</li>
+        <li>Arc</li>
+        <li>Secondary action</li>
+        <li>Timing</li>
+        <li>Exaggeration</li>
+        <li>Solid drawing</li>
+        <li>Appeal</li>
+      </ol>
+    </section>
 
-		<section class="alternating-background section-squash-and-stretch">
-			<h1 class="section-heading">Squash and stretch</h1>
-			<p class="rule-description">
-				Object is squashed while stopping and stretched in motion.
-			</p>
+    <section class="alternating-background section-squash-and-stretch">
+      <h1 class="section-heading">Squash and stretch</h1>
+      <p class="rule-description">
+        Object is squashed while stopping and stretched in motion.
+      </p>
 
-			<input type="button" value="Play" class="animate-button btn btn-dark" onclick="squashAndStretch(event);">
-			<div class="animation-container">
-				<div class="box"></div>
-			</div>
-		</section>
+      <input
+        type="button"
+        value="Play"
+        class="animate-button play"
+        id="play_squashAndStretch"
+        onclick="play_squashAndStretch(event);"
+      />
+      <input
+        type="button"
+        value="Stop"
+        class="animate-button stop"
+        id="stop_squashAndStretch"
+        onclick="stop_squashAndStretch(event);"
+      />
+      <div class="animation-container">
+        <div class="animating-box"></div>
+      </div>
+    </section>
 
-		<section class="alternating-background section-anticipation">
-			<h1 class="section-heading">Anticipation</h1>
-		</section>
+    <section class="alternating-background section-anticipation">
+      <h1 class="section-heading">Anticipation</h1>
+    </section>
 
-		<section class="alternating-background section-staging">
-			<h1 class="section-heading">Staging</h1>
-		</section>
+    <section class="alternating-background section-staging">
+      <h1 class="section-heading">Staging</h1>
+    </section>
 
-		<section class="alternating-background section-straight-ahead">
-			<h1 class="section-heading">Straight ahead action and pose to pose</h1>
-		</section>
+    <section class="alternating-background section-straight-ahead">
+      <h1 class="section-heading">Straight ahead action and pose to pose</h1>
+    </section>
 
-		<section class="alternating-background section-follow-through">
-			<h1 class="section-heading">Follow through and overlapping action</h1>
-		</section>
+    <section class="alternating-background section-follow-through">
+      <h1 class="section-heading">Follow through and overlapping action</h1>
+    </section>
 
-		<section class="alternating-background section-slow-in-out">
-			<h1 class="section-heading">Slow in and slow out</h1>
-		</section>
+    <section class="alternating-background section-slow-in-out">
+      <h1 class="section-heading">Slow in and slow out</h1>
+    </section>
 
-		<section class="alternating-background section-arc">
-			<h1 class="section-heading">Arc</h1>
-		</section>
+    <section class="alternating-background section-arc">
+      <h1 class="section-heading">Arc</h1>
+    </section>
 
-		<section class="alternating-background section-secondary-action">
-			<h1 class="section-heading">Secondary action</h1>
-		</section>
+    <section class="alternating-background section-secondary-action">
+      <h1 class="section-heading">Secondary action</h1>
+    </section>
 
-		<section class="alternating-background section-timing">
-			<h1 class="section-heading">Timing</h1>
-		</section>
+    <section class="alternating-background section-timing">
+      <h1 class="section-heading">Timing</h1>
+    </section>
 
-		<section class="alternating-background section-exaggeration">
-			<h1 class="section-heading">Exaggeration</h1>
-		</section>
+    <section class="alternating-background section-exaggeration">
+      <h1 class="section-heading">Exaggeration</h1>
+    </section>
 
-		<section class="alternating-background section-solid-drawing">
-			<h1 class="section-heading">Solid drawing</h1>
-		</section>
+    <section class="alternating-background section-solid-drawing">
+      <h1 class="section-heading">Solid drawing</h1>
+    </section>
 
-		<section class="alternating-background section-appeal">
-			<h1 class="section-heading">Appeal</h1>
-		</section>
+    <section class="alternating-background section-appeal">
+      <h1 class="section-heading">Appeal</h1>
+    </section>
 
-		    <section class="alternating-background session-content-list border-top border-secondary pt-3 pl-5">
-			<div class="text-center">
-				<h1 class="display-3 font-weight-bold">12 rules of animation</h1>
-				<h3> An attempt to translate them in web</h3>
-			</div>
-			<ol class="py-4">
-				<li>Squash and stretch</li>
-				<li>Anticipation</li>
-				<li>Staging</li>
-				<li>Straight ahead action and pose to pose</li>
-				<li>Follow through and overlapping action</li>
-				<li>Slow in and slow out</li>
-				<li>Arc</li>
-				<li>Secondary action</li>
-				<li>Timing</li>
-				<li>Exaggeration</li>
-				<li>Solid drawing</li>
-				<li>Appeal</li>
-			</ol>
+    <section
+      class="alternating-background session-content-list border-top border-secondary pt-3 pl-5"
+    >
+      <div class="text-center">
+        <h1 class="display-3 font-weight-bold">Recap</h1>
+      </div>
+      <ol class="py-4">
+        <li>Squash and stretch</li>
+        <li>Anticipation</li>
+        <li>Staging</li>
+        <li>Straight ahead action and pose to pose</li>
+        <li>Follow through and overlapping action</li>
+        <li>Slow in and slow out</li>
+        <li>Arc</li>
+        <li>Secondary action</li>
+        <li>Timing</li>
+        <li>Exaggeration</li>
+        <li>Solid drawing</li>
+        <li>Appeal</li>
+      </ol>
 		</section>
 
   </body>

@@ -1,11 +1,16 @@
+$black: #1d2124;
+$play-button: #fff0e3;
+$stop-button: #656be8;
+$animating-box: #656be8;
+
 
 body{
   font-size: 16px;
 }
 
 .alternating-background {
-  background-color: #e3e8ff;
   padding: 100px 0;
+  background-color: #e3e8ff;
 }
 
 .alternating-background:nth-child(even) {
@@ -13,9 +18,9 @@ body{
 }
 
 .section-heading {
-  text-align: center;
   font-size: 3.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .session-content-list {
@@ -39,9 +44,49 @@ body{
 }
 
 .animation-container {
-  padding: 40px;
+  margin: 40px;
+  height: 700px;
+  position: relative;
+  border: 2px solid $black;
 }
 
 .animate-button {
-  margin: 40px
+  width: 150px;
+  height: 70px;
+  margin: 0 40px;
+  font-size: 1.7em;
+  border-radius: 5px;
+  border-color: $black;
+
+  &.play {
+    color: $black;
+    background-color: $play-button;
+  }
+
+  &.stop {
+    margin: 0;
+    color: white;
+    background-color: $stop-button;
+  }
+}
+
+
+
+.animating-box {
+  top: 70%;
+  left: 50%;
+  width: 120px;
+  height: 80px;
+  position: absolute;
+  background-color: $animating-box;
+}
+
+.section-squash-and-stretch {
+
+
+
+  .animate {
+
+  }
+
 }
