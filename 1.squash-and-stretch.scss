@@ -4,7 +4,8 @@
 .section-squash-and-stretch {
   .animate-button {
 
-    &.play, &.stop {
+    &.play,
+    &.stop {
       outline: none;
     }
 
@@ -32,13 +33,16 @@
   }
 
   @keyframes squashStretch {
-    0%, 46% {
+
+    0%,
+    46% {
       transform: scaleX(1);
       height: 80px;
       bottom: 0px;
     }
 
-    10%, 35% {
+    10%,
+    35% {
       transform: scaleX(1.8);
       bottom: 0px;
       height: 40px;

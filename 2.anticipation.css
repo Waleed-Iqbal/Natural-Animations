@@ -48,7 +48,8 @@
 }
 
 @-webkit-keyframes anticipation {
-  0%, 56% {
+  0%,
+  56% {
     -webkit-transform: skewX(0deg);
             transform: skewX(0deg);
   }
@@ -60,14 +61,16 @@
     -webkit-transform: translateX(850px) skewX(20deg);
             transform: translateX(850px) skewX(20deg);
   }
-  23%, 40% {
+  23%,
+  40% {
     -webkit-transform: translateX(880px) skewX(0deg);
             transform: translateX(880px) skewX(0deg);
   }
 }
 
 @keyframes anticipation {
-  0%, 56% {
+  0%,
+  56% {
     -webkit-transform: skewX(0deg);
             transform: skewX(0deg);
   }
@@ -79,7 +82,8 @@
     -webkit-transform: translateX(850px) skewX(20deg);
             transform: translateX(850px) skewX(20deg);
   }
-  23%, 40% {
+  23%,
+  40% {
     -webkit-transform: translateX(880px) skewX(0deg);
             transform: translateX(880px) skewX(0deg);
   }

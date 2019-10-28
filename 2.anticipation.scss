@@ -51,7 +51,9 @@
       animation: anticipation 6s linear infinite;
 
       @keyframes anticipation {
-        0%, 56% {
+
+        0%,
+        56% {
           transform: skewX(0deg);
         }
 
@@ -63,7 +65,8 @@
           transform: translateX(850px) skewX(20deg);
         }
 
-        23%, 40% {
+        23%,
+        40% {
           transform: translateX(880px) skewX(0deg);
         }
       }

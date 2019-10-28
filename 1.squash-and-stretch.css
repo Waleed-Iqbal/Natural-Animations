@@ -32,13 +32,15 @@
 }
 
 @-webkit-keyframes squashStretch {
-  0%, 46% {
+  0%,
+  46% {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
     height: 80px;
     bottom: 0px;
   }
-  10%, 35% {
+  10%,
+  35% {
     -webkit-transform: scaleX(1.8);
             transform: scaleX(1.8);
     bottom: 0px;
@@ -61,13 +63,15 @@
 }
 
 @keyframes squashStretch {
-  0%, 46% {
+  0%,
+  46% {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
     height: 80px;
     bottom: 0px;
   }
-  10%, 35% {
+  10%,
+  35% {
     -webkit-transform: scaleX(1.8);
             transform: scaleX(1.8);
     bottom: 0px;
