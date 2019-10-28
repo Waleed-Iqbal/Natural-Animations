@@ -48,7 +48,7 @@
 }
 
 @-webkit-keyframes anticipation {
-  0% {
+  0%, 56% {
     -webkit-transform: skewX(0deg);
             transform: skewX(0deg);
   }
@@ -63,15 +63,11 @@
   23%, 40% {
     -webkit-transform: translateX(880px) skewX(0deg);
             transform: translateX(880px) skewX(0deg);
-  }
-  56% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
   }
 }
 
 @keyframes anticipation {
-  0% {
+  0%, 56% {
     -webkit-transform: skewX(0deg);
             transform: skewX(0deg);
   }
@@ -86,9 +82,5 @@
   23%, 40% {
     -webkit-transform: translateX(880px) skewX(0deg);
             transform: translateX(880px) skewX(0deg);
-  }
-  56% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
   }
 }
