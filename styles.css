@@ -63,11 +63,9 @@ body {
 
 .animating-box {
   top: 70%;
-  left: 50%;
+  left: 45%;
   width: 120px;
   height: 80px;
   position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   background-color: #656be8;
 }

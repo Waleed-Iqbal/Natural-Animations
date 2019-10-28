@@ -29,28 +29,25 @@
   }
 
   .animating-box.animate {
-    animation: squashStretch 8s linear 1;
+    animation: squashStretch 3s ease-in-out infinite;
   }
 
   @keyframes squashStretch {
+
     0% {
+      transform: scale(1, 1);
+    }
+
+    10%, 35% {
       transform: scale(1.8, 0.2);
     }
 
-    10% {
-      transform: scale(1.7, 0.3);
-    }
-
-    50% {
+    25% {
       transform: scale(0.3, 1.7) translateY(-250px);
     }
 
-    70% {
-      transform: scale(1.7, 0.3);
-    }
-
-    100% {
-      transform: scale(1.8, 0.2);
+    46% {
+      transform: scale(1, 1);
     }
 
   }
