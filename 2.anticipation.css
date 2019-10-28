@@ -32,62 +32,63 @@
 }
 
 .section-anticipation .animating-box {
-  top: 200px;
   left: 10%;
-}
-
-.section-anticipation .animating-box:hover {
-  cursor: pointer;
-  border: 4px dashed #1d2124;
+  top: 200px;
+  border: none;
+  width: 180px;
+  height: 100px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .section-anticipation .animating-box.animate {
-  -webkit-animation: squashStretch2 3s ease-in-out infinite;
-          animation: squashStretch2 3s ease-in-out infinite;
+  -webkit-animation: anticipation 6s linear infinite;
+          animation: anticipation 6s linear infinite;
 }
 
-@-webkit-keyframes squashStretch2 {
+@-webkit-keyframes anticipation {
   0% {
     -webkit-transform: skewX(0deg);
             transform: skewX(0deg);
   }
-  10% {
-    -webkit-transform: translateX(-60px) skewX(30deg);
-            transform: translateX(-60px) skewX(30deg);
+  4% {
+    -webkit-transform: translateX(-60px) skewX(20deg);
+            transform: translateX(-60px) skewX(20deg);
   }
-  25% {
-    -webkit-transform: translateX(550px) skewX(30deg);
-            transform: translateX(550px) skewX(30deg);
+  20% {
+    -webkit-transform: translateX(850px) skewX(20deg);
+            transform: translateX(850px) skewX(20deg);
   }
-  27% {
-    -webkit-transform: translateX(580px) skewX(0deg);
-            transform: translateX(580px) skewX(0deg);
+  23%, 40% {
+    -webkit-transform: translateX(880px) skewX(0deg);
+            transform: translateX(880px) skewX(0deg);
   }
-  70% {
-    -webkit-transform: translateY(400px);
-            transform: translateY(400px);
+  56% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
-@keyframes squashStretch2 {
+@keyframes anticipation {
   0% {
     -webkit-transform: skewX(0deg);
             transform: skewX(0deg);
   }
-  10% {
-    -webkit-transform: translateX(-60px) skewX(30deg);
-            transform: translateX(-60px) skewX(30deg);
+  4% {
+    -webkit-transform: translateX(-60px) skewX(20deg);
+            transform: translateX(-60px) skewX(20deg);
   }
-  25% {
-    -webkit-transform: translateX(550px) skewX(30deg);
-            transform: translateX(550px) skewX(30deg);
+  20% {
+    -webkit-transform: translateX(850px) skewX(20deg);
+            transform: translateX(850px) skewX(20deg);
   }
-  27% {
-    -webkit-transform: translateX(580px) skewX(0deg);
-            transform: translateX(580px) skewX(0deg);
+  23%, 40% {
+    -webkit-transform: translateX(880px) skewX(0deg);
+            transform: translateX(880px) skewX(0deg);
   }
-  70% {
-    -webkit-transform: translateY(400px);
-            transform: translateY(400px);
+  56% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
