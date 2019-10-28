@@ -1,0 +1,57 @@
+@import './variables';
+
+
+.section-squash-and-stretch {
+  .animate-button {
+    transition: all ease-out 0.1s;
+
+    &.play, &.stop {
+      outline: none;
+    }
+
+    &.play:hover {
+      box-shadow: 0 0 20px 0px $stop-button;
+      transform: scale(1.1);
+    }
+
+    &.play:active {
+      transform: scale(0.9);
+    }
+
+    &.stop:hover {
+      box-shadow: 0 0 20px 0px $play-button;
+      transform: scaleX(1.1);
+    }
+
+    &.stop:active {
+      transform: scaleY(0.9);
+    }
+  }
+
+  .animating-box.animate {
+    animation: squashStretch 8s linear 1;
+  }
+
+  @keyframes squashStretch {
+    0% {
+      transform: scale(1.8, 0.2);
+    }
+
+    10% {
+      transform: scale(1.7, 0.3);
+    }
+
+    50% {
+      transform: scale(0.3, 1.7) translateY(-250px);
+    }
+
+    70% {
+      transform: scale(1.7, 0.3);
+    }
+
+    100% {
+      transform: scale(1.8, 0.2);
+    }
+
+  }
+}

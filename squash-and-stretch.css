@@ -1,0 +1,83 @@
+.section-squash-and-stretch .animate-button {
+  -webkit-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+
+.section-squash-and-stretch .animate-button.play, .section-squash-and-stretch .animate-button.stop {
+  outline: none;
+}
+
+.section-squash-and-stretch .animate-button.play:hover {
+  -webkit-box-shadow: 0 0 20px 0px #656be8;
+          box-shadow: 0 0 20px 0px #656be8;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.section-squash-and-stretch .animate-button.play:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.section-squash-and-stretch .animate-button.stop:hover {
+  -webkit-box-shadow: 0 0 20px 0px #ffcea3;
+          box-shadow: 0 0 20px 0px #ffcea3;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
+.section-squash-and-stretch .animate-button.stop:active {
+  -webkit-transform: scaleY(0.9);
+          transform: scaleY(0.9);
+}
+
+.section-squash-and-stretch .animating-box.animate {
+  -webkit-animation: squashStretch 8s linear 1;
+          animation: squashStretch 8s linear 1;
+}
+
+@-webkit-keyframes squashStretch {
+  0% {
+    -webkit-transform: scale(1.8, 0.2);
+            transform: scale(1.8, 0.2);
+  }
+  10% {
+    -webkit-transform: scale(1.7, 0.3);
+            transform: scale(1.7, 0.3);
+  }
+  50% {
+    -webkit-transform: scale(0.3, 1.7) translateY(-250px);
+            transform: scale(0.3, 1.7) translateY(-250px);
+  }
+  70% {
+    -webkit-transform: scale(1.7, 0.3);
+            transform: scale(1.7, 0.3);
+  }
+  100% {
+    -webkit-transform: scale(1.8, 0.2);
+            transform: scale(1.8, 0.2);
+  }
+}
+
+@keyframes squashStretch {
+  0% {
+    -webkit-transform: scale(1.8, 0.2);
+            transform: scale(1.8, 0.2);
+  }
+  10% {
+    -webkit-transform: scale(1.7, 0.3);
+            transform: scale(1.7, 0.3);
+  }
+  50% {
+    -webkit-transform: scale(0.3, 1.7) translateY(-250px);
+            transform: scale(0.3, 1.7) translateY(-250px);
+  }
+  70% {
+    -webkit-transform: scale(1.7, 0.3);
+            transform: scale(1.7, 0.3);
+  }
+  100% {
+    -webkit-transform: scale(1.8, 0.2);
+            transform: scale(1.8, 0.2);
+  }
+}
