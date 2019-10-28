@@ -68,6 +68,8 @@ body {
   left: 45%;
   width: 120px;
   height: 80px;
+  border: none;
+  outline: none;
   position: absolute;
   background-color: #656be8;
 }

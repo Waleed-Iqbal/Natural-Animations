@@ -1,4 +1,76 @@
 @import "_variables";
 
+.section-anticipation {
+  .animate-button {
 
+    &.play,
+    &.stop {
+      outline: none;
+    }
 
+    &.play:hover,
+    &.stop:hover {
+      font-weight: bold;
+    }
+
+    &.play:active,
+    &.stop:active {
+      border-radius: 30px;
+      border-width: 5px;
+      transform: scale(0.9);
+    }
+
+    &.play:hover {
+      border-radius: 15px;
+    }
+
+    &.play:active {
+      box-shadow: 0 0 20px 0px $stop-button;
+    }
+
+    &.stop:hover {
+      border-radius: 15px;
+    }
+
+    &.stop:active {
+      box-shadow: 0 0 20px 0px $play-button;
+    }
+  }
+
+  .animating-box {
+    top: 200px;
+    left: 10%;
+
+    &:hover {
+      cursor: pointer;
+      border: 4px dashed $black;
+    }
+
+    &.animate {
+
+      animation: squashStretch2 3s ease-in-out infinite;
+
+      @keyframes squashStretch2 {
+        0% {
+          transform: skewX(0deg);
+        }
+
+        10% {
+          transform: translateX(-60px) skewX(30deg);
+        }
+
+        25% {
+          transform: translateX(550px) skewX(30deg);
+        }
+
+        27% {
+          transform: translateX(580px) skewX(0deg);
+        }
+
+        70% {
+          transform: translateY(400px);
+        }
+      }
+    }
+  }
+}
