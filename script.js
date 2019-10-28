@@ -8,12 +8,14 @@
   }
 
 
+  var anticipationBox = ".section-anticipation .animating-box";
+
   function play_anticipation(e) {
-    document.querySelector('.section-anticipation .animating-box').classList.add('animate');
+    document.querySelector(anticipationBox).classList.add('animate');
   }
 
   function stop_anticipation(e) {
-    document.querySelector('.section-anticipation .animating-box').classList.remove('animate');
+    document.querySelector(anticipationBox).classList.remove('animate');
   }
 
   function play_staging(e) {

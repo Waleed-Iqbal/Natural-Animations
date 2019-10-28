@@ -48,6 +48,8 @@ body {
   font-size: 1.7em;
   border-radius: 5px;
   border-color: #1d2124;
+  -webkit-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
 }
 
 .animate-button.play {
@@ -62,7 +64,7 @@ body {
 }
 
 .animating-box {
-  top: 70%;
+  bottom: 0;
   left: 45%;
   width: 120px;
   height: 80px;

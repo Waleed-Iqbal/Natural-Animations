@@ -55,6 +55,7 @@ body{
   font-size: 1.7em;
   border-radius: 5px;
   border-color: $black;
+  transition: all ease-out 0.1s;
 
   &.play {
     color: $black;
@@ -69,7 +70,7 @@ body{
 }
 
 .animating-box {
-  top: 70%;
+  bottom: 0;
   left: 45%;
   width: 120px;
   height: 80px;
