@@ -41,22 +41,22 @@
 
     &.animate {
       filter: none;
-      animation: stagingAnimation linear 3s infinite;
+      animation: stagingAnimation linear 4s infinite;
 
       @keyframes stagingAnimation {
-        0% {
+        0%, 15% {
           transform: rotateZ(0deg);
         }
 
-        5%, 25% {
+        20%, 40% {
           transform: rotateZ(15deg);
         }
 
-        15%, 40% {
+        30%, 50% {
           transform: rotateZ(-15deg);
         }
 
-        20%, 45% {
+        35%, 55% {
           transform: rotateZ(0deg);
         }
       }

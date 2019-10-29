@@ -36,43 +36,43 @@
 .section-staging .animating-box.animate {
   -webkit-filter: none;
           filter: none;
-  -webkit-animation: stagingAnimation linear 3s infinite;
-          animation: stagingAnimation linear 3s infinite;
+  -webkit-animation: stagingAnimation linear 4s infinite;
+          animation: stagingAnimation linear 4s infinite;
 }
 
 @-webkit-keyframes stagingAnimation {
-  0% {
+  0%, 15% {
     -webkit-transform: rotateZ(0deg);
             transform: rotateZ(0deg);
   }
-  5%, 25% {
+  20%, 40% {
     -webkit-transform: rotateZ(15deg);
             transform: rotateZ(15deg);
   }
-  15%, 40% {
+  30%, 50% {
     -webkit-transform: rotateZ(-15deg);
             transform: rotateZ(-15deg);
   }
-  20%, 45% {
+  35%, 55% {
     -webkit-transform: rotateZ(0deg);
             transform: rotateZ(0deg);
   }
 }
 
 @keyframes stagingAnimation {
-  0% {
+  0%, 15% {
     -webkit-transform: rotateZ(0deg);
             transform: rotateZ(0deg);
   }
-  5%, 25% {
+  20%, 40% {
     -webkit-transform: rotateZ(15deg);
             transform: rotateZ(15deg);
   }
-  15%, 40% {
+  30%, 50% {
     -webkit-transform: rotateZ(-15deg);
             transform: rotateZ(-15deg);
   }
-  20%, 45% {
+  35%, 55% {
     -webkit-transform: rotateZ(0deg);
             transform: rotateZ(0deg);
   }
