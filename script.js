@@ -21,12 +21,26 @@ function stop_anticipation(e) {
 }
 
 
-
+let stagingBox = `.section-staging ${animatingBox}`;
+let randomBox = 1;
+let blur = 'blur';
 function play_staging(e) {
-  document.querySelector('.section-staging .animating-box').classList.add(animateClass);
+  let animatingBoxes = document.querySelectorAll(stagingBox);
+  randomBox = Math.ceil(Math.random() * 6);
+  animatingBoxes.forEach((element, index) => {
+    element.classList.add(blur);
+    if ((index+1) === randomBox) {
+      element.classList.add(animateClass);
+    }
+
+  });
 }
 function stop_staging(e) {
-  document.querySelector('.section-staging .animating-box').classList.remove(animateClass);
+  let animatingBoxes = document.querySelectorAll(stagingBox);
+  animatingBoxes.forEach((element) => {
+    element.classList.remove(blur);
+    element.classList.remove(animateClass);
+  });
 }
 
 

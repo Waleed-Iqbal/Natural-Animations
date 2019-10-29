@@ -1,0 +1,66 @@
+@import './variables';
+
+.section-staging {
+
+  .animating-box {
+
+    &:nth-child(1) {
+      top: 37%;
+      left: 25%;
+    }
+
+    &:nth-child(2) {
+      top: 60%;
+      left: 35%;
+    }
+
+    &:nth-child(3) {
+      top: 80%;
+      left: 10%;
+    }
+
+    &:nth-child(4) {
+      top: 70%;
+      left: 23%;
+    }
+
+    &:nth-child(5) {
+      top: 30%;
+      left: 10%;
+    }
+
+    &:nth-child(6) {
+      top: 56%;
+      left: 5%;
+    }
+
+
+    &.blur {
+      filter: blur(5px);
+    }
+
+    &.animate {
+      filter: none;
+      animation: stagingAnimation linear 3s infinite;
+
+      @keyframes stagingAnimation {
+        0% {
+          transform: rotateZ(0deg);
+        }
+
+        5%, 25% {
+          transform: rotateZ(15deg);
+        }
+
+        15%, 40% {
+          transform: rotateZ(-15deg);
+        }
+
+        20%, 45% {
+          transform: rotateZ(0deg);
+        }
+
+      }
+    }
+  }
+}
