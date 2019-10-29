@@ -1,7 +1,3 @@
-.section-squash-and-stretch .animate-button.play, .section-squash-and-stretch .animate-button.stop {
-  outline: none;
-}
-
 .section-squash-and-stretch .animate-button.play:hover {
   -webkit-box-shadow: 0 0 20px 0px #656be8;
           box-shadow: 0 0 20px 0px #656be8;

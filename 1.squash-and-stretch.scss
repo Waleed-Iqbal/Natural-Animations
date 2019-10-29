@@ -4,11 +4,6 @@
 .section-squash-and-stretch {
   .animate-button {
 
-    &.play,
-    &.stop {
-      outline: none;
-    }
-
     &.play:hover {
       box-shadow: 0 0 20px 0px $stop-button;
       transform: scale(1.1);
