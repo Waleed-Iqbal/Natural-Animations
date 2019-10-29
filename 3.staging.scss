@@ -34,7 +34,6 @@
       left: 5%;
     }
 
-
     &.blur {
       filter: blur(5px);
     }
@@ -44,19 +43,19 @@
       animation: stagingAnimation linear 4s infinite;
 
       @keyframes stagingAnimation {
-        0%, 15% {
+        0%, 20% {
           transform: rotateZ(0deg);
         }
 
-        20%, 40% {
+        25%, 45% {
           transform: rotateZ(15deg);
         }
 
-        30%, 50% {
+        35%, 55% {
           transform: rotateZ(-15deg);
         }
 
-        35%, 55% {
+        40%, 60% {
           transform: rotateZ(0deg);
         }
       }
