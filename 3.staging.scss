@@ -2,6 +2,25 @@
 
 .section-staging {
 
+  .play:hover {
+    transform: scale(0.9);
+
+  }
+
+  .play:active {
+    box-shadow: 0 0 20px 0px $stop-button;
+    transform: scale(1.1);
+  }
+
+  .stop:hover {
+    transform: scaleY(0.9);
+  }
+
+  .stop:active {
+    box-shadow: 0 0 20px 0px $play-button;
+    transform: scaleX(1.1);
+  }
+
   .animating-box {
 
     &:nth-child(1) {

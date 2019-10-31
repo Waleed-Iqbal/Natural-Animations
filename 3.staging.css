@@ -1,3 +1,27 @@
+.section-staging .play:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.section-staging .play:active {
+  -webkit-box-shadow: 0 0 20px 0px #656be8;
+          box-shadow: 0 0 20px 0px #656be8;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.section-staging .stop:hover {
+  -webkit-transform: scaleY(0.9);
+          transform: scaleY(0.9);
+}
+
+.section-staging .stop:active {
+  -webkit-box-shadow: 0 0 20px 0px #ffcea3;
+          box-shadow: 0 0 20px 0px #ffcea3;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
 .section-staging .animating-box:nth-child(1) {
   top: 37%;
   left: 25%;
