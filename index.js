@@ -1,8 +1,8 @@
 
-import './styles.scss';
-import './1.squash-and-stretch.scss';
-import './2.anticipation.scss';
-import './3.staging.scss';
+import './styles/styles.scss';
+import './styles/1.squash-and-stretch.scss';
+import './styles/2.anticipation.scss';
+import './styles/3.staging.scss';
 
 
 let animateClass = 'animate';
