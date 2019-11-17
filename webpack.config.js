@@ -3,9 +3,9 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: "./index.js",
+  entry: "./src/index.js",
   output: {
-   filename:  "./main-[contentHash].js",
+   filename:  "./index-[contentHash].js",
    path: path.resolve(__dirname, 'dist')
   },
   module: {
@@ -22,7 +22,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html"
+      template: "./src/index.html"
     })
   ]
 }
