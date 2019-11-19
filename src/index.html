@@ -1,327 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Natural Animation</title>
-  </head>
-  <body>
-    <section
-      class="alternating-background inspiration-source-material text-center"
-    >
-      <h1 class="section-heading pt-3">Inspired by / source material</h1>
-      <img class="mt-3 w-50" src="./assets/book.png" alt="The Illusion of Life" />
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <section
-      class="alternating-background session-content-list border-top border-secondary pt-3 pl-5"
-    >
-      <div class="text-center">
-        <h1 class="display-3 font-weight-bold">12 rules of animation</h1>
-        <h3>An attempt to translate them in web</h3>
-      </div>
-      <ol class="py-4">
-        <li>Squash and stretch</li>
-        <li>Anticipation</li>
-        <li>Staging</li>
-        <li>Straight ahead action and pose to pose</li>
-        <li>Follow through and overlapping action</li>
-        <li>Slow in and slow out</li>
-        <li>Arc</li>
-        <li>Secondary action</li>
-        <li>Timing</li>
-        <li>Exaggeration</li>
-        <li>Solid drawing</li>
-        <li>Appeal</li>
-      </ol>
-    </section>
+  <title>Natural Animation</title>
+</head>
 
-    <section class="alternating-background section-squash-and-stretch">
-      <h1 class="section-heading">Squash and stretch</h1>
-      <p class="rule-description">
-        Object is squashed while stopping and stretched in motion.
-      </p>
+<body>
+  <section class="alternating-background inspiration-source-material text-center">
+    <h1 class="section-heading pt-3">Inspired by / source material</h1>
+    <img class="mt-3 w-50" src="./assets/book.png" alt="The Illusion of Life" />
+  </section>
 
-      <input
-        type="button"
-        value="Play"
-        class="animate-button play"
-        id="play_squashAndStretch"
-      />
-      <input
-        type="button"
-        value="Stop"
-        class="animate-button stop"
-        id="stop_squashAndStretch"
-      />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
+  <section class="alternating-background session-content-list border-top border-secondary pt-3 pl-5">
+    <div class="text-center">
+      <h1 class="display-3 font-weight-bold">12 rules of animation</h1>
+      <h3>An attempt to translate them in web</h3>
+    </div>
+    <ol class="py-4">
+      <li>Squash and stretch</li>
+      <li>Anticipation</li>
+      <li>Staging</li>
+      <li>Straight ahead action and pose to pose</li>
+      <li>Follow through and overlapping action</li>
+      <li>Slow in and slow out</li>
+      <li>Arc</li>
+      <li>Secondary action</li>
+      <li>Timing</li>
+      <li>Exaggeration</li>
+      <li>Solid drawing</li>
+      <li>Appeal</li>
+    </ol>
+  </section>
 
-    <section class="alternating-background section-anticipation">
-      <h1 class="section-heading">Anticipation</h1>
-      <p class="rule-description">
-        Avoid sudden movement.
-        <br />
-        Set expectation that some motion/action is about to happen.
-      </p>
+  <section class="alternating-background section-squash-and-stretch">
+    <h1 class="section-heading">Squash and stretch</h1>
+    <p class="rule-description">
+      Object is squashed while stopping and stretched in motion.
+    </p>
 
-      <input
-        type="button"
-        value="Play"
-        class="animate-button play"
-        id="play_anticipation"
-      />
-      <input
-        type="button"
-        value="Stop"
-        class="animate-button stop"
-        id="stop_anticipation"
-      />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
+    <input type="button" value="Play" class="animate-button play" id="play_squashAndStretch" />
+    <input type="button" value="Stop" class="animate-button stop" id="stop_squashAndStretch" />
+    <div class="animation-container">
+      <div class="animating-box"></div>
+    </div>
+  </section>
 
-    <section class="alternating-background section-staging">
-      <h1 class="section-heading">Staging</h1>
+  <section class="alternating-background section-anticipation">
+    <h1 class="section-heading">Anticipation</h1>
+    <p class="rule-description">
+      Avoid sudden movement.
+      <br />
+      Set expectation that some motion/action is about to happen.
+    </p>
+
+    <input type="button" value="Play" class="animate-button play" id="play_anticipation" />
+    <input type="button" value="Stop" class="animate-button stop" id="stop_anticipation" />
+    <div class="animation-container">
+      <div class="animating-box"></div>
+    </div>
+  </section>
+
+  <section class="alternating-background section-staging">
+    <h1 class="section-heading">Staging</h1>
+    <p class="rule-description"></p>
+
+    <input type="button" value="Play" class="animate-button play" id="play_staging" />
+    <input type="button" value="Stop" class="animate-button stop" id="stop_staging" />
+    <div class="animation-container">
+      <div class="animating-box"></div>
+      <div class="animating-box"></div>
+      <div class="animating-box"></div>
+      <div class="animating-box"></div>
+      <div class="animating-box"></div>
+      <div class="animating-box"></div>
+    </div>
+  </section>
+
+  <section class="alternating-background section-straightAhead">
+    <h1 class="section-heading">Straight ahead action and pose to pose</h1>
+    <p class="rule-description"></p>
+
+    <input type="button" value="Play" class="animate-button play" id="play_straightAhead" />
+    <input type="button" value="Stop" class="animate-button stop" id="stop_straightAhead" />
+    <div class="animation-container">
+      <div class="animating-box"></div>
+    </div>
+  </section>
+
+  <section class="alternating-background section-followThrough">
+    <h1 class="section-heading">Follow through and overlapping action</h1>
+    <p class="rule-description"></p>
+
+    <input type="button" value="Play" class="animate-button play" id="play_followThrough" />
+    <input type="button" value="Stop" class="animate-button stop" id="stop_followThrough" />
+    <div class="animation-container">
+      <div class="animating-box"></div>
+    </div>
+  </section>
+
+  <section class="alternating-background section-slowInOut">
+    <h1 class="section-heading">Slow in and slow out</h1>
+    <p class="rule-description"></p>
+
+    <input type="button" value="Play" class="animate-button play" id="play_slowInOut" />
+    <input type="button" value="Stop" class="animate-button stop" id="stop_slowInOut" />
+    <div class="animation-container">
+      <div class="animating-box"></div>
+    </div>
+  </section>
+
+  <section class="alternating-background section-arc">
+    <h1 class="section-heading">Arc</h1>
+    <p class="rule-description"></p>
+
+    <input type="button" value="Play" class="animate-button play" id="play_arc" />
+    <input type="button" value="Stop" class="animate-button stop" id="stop_arc" />
+    <div class="animation-container">
+      <div class="animating-box"></div>
+    </div>
+  </section>
+
+  <section class="alternating-background section-secondaryAction">
+    <h1 class="section-heading">Secondary action</h1>
+    <p class="rule-description"></p>
+
+    <input type="button" value="Play" class="animate-button play" id="play_secondaryAction" />
+    <input type="button" value="Stop" class="animate-button stop" id="stop_secondaryAction" />
+    <div class="animation-container">
+      <div class="animating-box"></div>
+    </div>
+  </section>
+
+  <section class="alternating-background section-timing">
+    <h1 class="section-heading">Timing</h1>
+    <p class="rule-description"></p>
+
+    <input type="button" value="Play" class="animate-button play" id="play_timing" />
+    <input type="button" value="Stop" class="animate-button stop" id="stop_timing" />
+    <div class="animation-container">
+      <div class="animating-box"></div>
+    </div>
+  </section>
+
+  <section class="alternating-background section-exaggeration">
+    <h1 class="section-heading">Exaggeration</h1>
+    <p class="rule-description"></p>
+
+    <input type="button" value="Play" class="animate-button play" id="play_exaggeration" />
+    <input type="button" value="Stop" class="animate-button stop" id="stop_exaggeration" />
+    <div class="animation-container">
+      <div class="animating-box"></div>
+    </div>
+  </section>
+
+  <section class="alternating-background section-solidDrawing">
+    <h1 class="section-heading">Solid drawing</h1>
+    <p class="rule-description"></p>
+
+    <input type="button" value="Play" class="animate-button play" id="play_solidDrawing" />
+    <input type="button" value="Stop" class="animate-button stop" id="stop_solidDrawing" />
+    <div class="animation-container">
+      <div class="animating-box"></div>
+    </div>
+  </section>
+
+  <section class="alternating-background section-appeal">
+    <h1 class="section-heading">Appeal</h1>
+    <p class="rule-description"></p>
+
+    <input type="button" value="Play" class="animate-button play" id="play_appeal" />
+    <input type="button" value="Stop" class="animate-button stop" id="stop_appeal" />
+    <div class="animation-container">
+      <div class="animating-box"></div>
+    </div>
+  </section>
+
+  <section class="alternating-background session-content-list border-top border-secondary pt-3 pl-5">
+    <div class="text-center">
+      <h1 class="display-3 font-weight-bold">Recap</h1>
       <p class="rule-description"></p>
+    </div>
+    <ol class="py-4">
+      <li>Squash and stretch</li>
+      <li>Anticipation</li>
+      <li>Staging</li>
+      <li>Straight ahead action and pose to pose</li>
+      <li>Follow through and overlapping action</li>
+      <li>Slow in and slow out</li>
+      <li>Arc</li>
+      <li>Secondary action</li>
+      <li>Timing</li>
+      <li>Exaggeration</li>
+      <li>Solid drawing</li>
+      <li>Appeal</li>
+    </ol>
+  </section>
+</body>
 
-      <input
-        type="button"
-        value="Play"
-        class="animate-button play"
-        id="play_staging"
-      />
-      <input
-        type="button"
-        value="Stop"
-        class="animate-button stop"
-        id="stop_staging"
-      />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-        <div class="animating-box"></div>
-        <div class="animating-box"></div>
-        <div class="animating-box"></div>
-        <div class="animating-box"></div>
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-straightAhead">
-      <h1 class="section-heading">Straight ahead action and pose to pose</h1>
-      <p class="rule-description"></p>
-
-      <input
-        type="button"
-        value="Play"
-        class="animate-button play"
-        id="play_straightAhead"
-      />
-      <input
-        type="button"
-        value="Stop"
-        class="animate-button stop"
-        id="stop_straightAhead"
-      />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-followThrough">
-      <h1 class="section-heading">Follow through and overlapping action</h1>
-      <p class="rule-description"></p>
-
-      <input
-        type="button"
-        value="Play"
-        class="animate-button play"
-        id="play_followThrough"
-      />
-      <input
-        type="button"
-        value="Stop"
-        class="animate-button stop"
-        id="stop_followThrough"
-      />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-slowInOut">
-      <h1 class="section-heading">Slow in and slow out</h1>
-      <p class="rule-description"></p>
-
-      <input
-        type="button"
-        value="Play"
-        class="animate-button play"
-        id="play_slowInOut"
-      />
-      <input
-        type="button"
-        value="Stop"
-        class="animate-button stop"
-        id="stop_slowInOut"
-      />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-arc">
-      <h1 class="section-heading">Arc</h1>
-      <p class="rule-description"></p>
-
-      <input
-        type="button"
-        value="Play"
-        class="animate-button play"
-        id="play_arc"
-      />
-      <input
-        type="button"
-        value="Stop"
-        class="animate-button stop"
-        id="stop_arc"
-      />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-secondaryAction">
-      <h1 class="section-heading">Secondary action</h1>
-      <p class="rule-description"></p>
-
-      <input
-        type="button"
-        value="Play"
-        class="animate-button play"
-        id="play_secondaryAction"
-      />
-      <input
-        type="button"
-        value="Stop"
-        class="animate-button stop"
-        id="stop_secondaryAction"
-      />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-timing">
-      <h1 class="section-heading">Timing</h1>
-      <p class="rule-description"></p>
-
-      <input
-        type="button"
-        value="Play"
-        class="animate-button play"
-        id="play_timing"
-      />
-      <input
-        type="button"
-        value="Stop"
-        class="animate-button stop"
-        id="stop_timing"
-      />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-exaggeration">
-      <h1 class="section-heading">Exaggeration</h1>
-      <p class="rule-description"></p>
-
-      <input
-        type="button"
-        value="Play"
-        class="animate-button play"
-        id="play_exaggeration"
-      />
-      <input
-        type="button"
-        value="Stop"
-        class="animate-button stop"
-        id="stop_exaggeration"
-      />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-solidDrawing">
-      <h1 class="section-heading">Solid drawing</h1>
-      <p class="rule-description"></p>
-
-      <input
-        type="button"
-        value="Play"
-        class="animate-button play"
-        id="play_solidDrawing"
-      />
-      <input
-        type="button"
-        value="Stop"
-        class="animate-button stop"
-        id="stop_solidDrawing"
-      />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-appeal">
-      <h1 class="section-heading">Appeal</h1>
-      <p class="rule-description"></p>
-
-      <input
-        type="button"
-        value="Play"
-        class="animate-button play"
-        id="play_appeal"
-      />
-      <input
-        type="button"
-        value="Stop"
-        class="animate-button stop"
-        id="stop_appeal"
-      />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section
-      class="alternating-background session-content-list border-top border-secondary pt-3 pl-5"
-    >
-      <div class="text-center">
-        <h1 class="display-3 font-weight-bold">Recap</h1>
-        <p class="rule-description"></p>
-      </div>
-      <ol class="py-4">
-        <li>Squash and stretch</li>
-        <li>Anticipation</li>
-        <li>Staging</li>
-        <li>Straight ahead action and pose to pose</li>
-        <li>Follow through and overlapping action</li>
-        <li>Slow in and slow out</li>
-        <li>Arc</li>
-        <li>Secondary action</li>
-        <li>Timing</li>
-        <li>Exaggeration</li>
-        <li>Solid drawing</li>
-        <li>Appeal</li>
-      </ol>
-    </section>
-  </body>
 </html>
