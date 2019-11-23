@@ -7,11 +7,15 @@ body {
 
 .alternating-background {
   padding: 100px 0;
-  background-color: #e3e8ff;
-}
 
-.alternating-background:nth-child(even) {
-  background-color: #fcf2ea;
+  &:nth-child(odd) {
+    background: linear-gradient(0deg, #f7f7f7, #bdd7d9);
+  }
+
+  &:nth-child(even) {
+    background: linear-gradient(0deg, #bdd7d9, #f7f7f7);  
+  }
+
 }
 
 .section-heading {
@@ -67,6 +71,7 @@ body {
     margin: 0;
     color: white;
     background-color: $stop-button;
+    background: linear-gradient(#656bd8, $stop-button);
   }
 }
 
