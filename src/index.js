@@ -3,6 +3,8 @@ import './styles/styles.scss';
 import './styles/1.squash-and-stretch.scss';
 import './styles/2.anticipation.scss';
 import './styles/3.staging.scss';
+import "./impress";
+
 
 let animateClass = 'animate';
 let animatingBox = '.animating-box'
@@ -122,3 +124,6 @@ document.getElementById('play_appeal').addEventListener('click', function(e) {
 document.getElementById('stop_appeal').addEventListener('click', function(e) {
   document.querySelector('.section-appeal .animating-box').classList.remove(animateClass);
 });
+
+impress().init();
+

@@ -7,6 +7,8 @@ body {
 
 .alternating-background {
   padding: 100px 0;
+  width: 100vw;
+  height: 100vh;
 
   &:nth-child(odd) {
     background: linear-gradient(0deg, #f7f7f7, #bdd7d9);
