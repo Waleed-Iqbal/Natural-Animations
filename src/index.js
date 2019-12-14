@@ -3,8 +3,25 @@ import './styles/styles.scss';
 import './styles/1.squash-and-stretch.scss';
 import './styles/2.anticipation.scss';
 import './styles/3.staging.scss';
+// import './styles/avatar_waleed_face.scss';
 import "./impress";
 
+
+let slides = impress();
+slides.init();
+
+
+document.querySelector('.next-slide').addEventListener('click', function(e) {
+  setTimeout(() => {
+    slides.next();
+  }, 200);
+});
+
+document.querySelector('.prev-slide').addEventListener('click', function(e) {
+  setTimeout(() => {
+    slides.prev();
+  }, 200);
+});
 
 let animateClass = 'animate';
 let animatingBox = '.animating-box'

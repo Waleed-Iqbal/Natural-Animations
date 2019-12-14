@@ -1,13 +1,46 @@
 @import './variables';
 @import '~bootstrap/scss/bootstrap';
+@import './avatar_waleed_face.scss';
 
 body {
   font-size: 16px;
 }
 
+.navigation-controls {
+  top: 3%;
+  position: fixed;
+  z-index: 10000;
+  opacity: 0;
+  border: none;
+  outline: none;
+  background: none;
+
+  img {
+    width: 40px;
+    height:  20px;
+  }
+
+  &.next-slide {
+    right: 120px;
+  }
+
+  &.prev-slide {
+    right: 180px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
 .alternating-background {
-  padding: 100px 0;
-  width: 100vw;
+  padding: 100px;
+  width: 90vw;
   height: 100vh;
 
   &:nth-child(odd) {
@@ -15,10 +48,50 @@ body {
   }
 
   &:nth-child(even) {
-    background: linear-gradient(0deg, #bdd7d9, #f7f7f7);  
+    background: linear-gradient(0deg, #bdd7d9, #f7f7f7);
   }
 
 }
+
+.welcome-slide {
+  $rotation-angle: 10deg;
+
+  .title-welcome {
+    font-size: 2.5em;
+  }
+  
+  .topic {
+    margin-top: 200px;
+    font-size: 3em;
+    animation: anim-topic 3s ease-in-out infinite alternate-reverse;
+  
+  }
+  
+  @keyframes anim-topic {
+    from {
+      transform: rotateZ(-$rotation-angle);
+    }
+    to {
+      transform: rotateZ($rotation-angle);
+    }
+  }
+  
+  .sub-topic {
+    font-size: 2em;
+    margin-top: 50px;
+    animation: anim-subtopic 3s ease-in-out infinite alternate-reverse;
+  }
+  
+  @keyframes anim-subtopic {
+    from {
+      transform: rotateZ($rotation-angle);
+    }
+    to {
+      transform: rotateZ(-$rotation-angle);
+    }
+  }
+}
+
 
 .section-heading {
   font-size: 3.5rem;
@@ -33,11 +106,19 @@ body {
   }
 }
 
+.about-me {
+  img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
 .inspiration-source-material {
   img {
     width: 50%;
     max-width: 600px;
     min-width: 320px;
+    height: 70%;
   }
 }
 
@@ -49,7 +130,7 @@ body {
 
 .animation-container {
   margin: 40px;
-  height: 700px;
+  height: 600px;
   position: relative;
   border: 2px solid $black;
 }
@@ -87,3 +168,4 @@ body {
   position: absolute;
   background-color: $animating-box;
 }
+
