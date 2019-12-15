@@ -27,7 +27,8 @@
       <h1 class="sub-topic"><span>An Attempt <h5>(with disclaimers)</h5></span> </h1>
     </section>
 
-    <section class="alternating-background speaker-info-slide text-center step" data-y="0" data-x="-4000" data-rotate="-50" >
+    <section class="alternating-background speaker-info-slide text-center step" data-y="0" data-x="-4000"
+      data-rotate="-50">
       <h1 class="section-heading pt-3 heading-1">Khawaja Waleed Iqbal</h1>
       <div id="AvatarWaleedFace">
         <div class="avatar--glasses">
@@ -63,19 +64,21 @@
           </ul>
         </div>
         <div class="col-6">
-            <img class="profile-picture" src="./assets/thug_life.jpg" />
+          <img class="profile-picture" src="./assets/thug_life.jpg" />
         </div>
-        
+
       </div>
     </section>
 
-    <section class="alternating-background inspiration-source-material text-center step" data-y="0" data-x="0" data-rotate="90">
+    <section class="alternating-background inspiration-source-material text-center step" data-y="0" data-x="0"
+      data-rotate="90">
       <h1 class="section-heading pt-3">Inspired by / source material</h1>
       <img class="mt-5 pt-5 illusion-of-life-book" src="./assets/book.png" alt="The Illusion of Life" />
       <img class="meme" src="./assets/meme-3.jpg" />
     </section>
 
-    <section class="alternating-background session-content-list border-top border-secondary pt-3 pl-5 step" data-y="0" data-x="2000" data-rotate="50">
+    <section class="alternating-background session-content-list border-top border-secondary pt-3 pl-5 step" data-y="0"
+      data-x="2000" data-rotate="50">
       <div class="mt-5 text-center">
         <h1 class="display-3 font-weight-bold">12 rules of animation</h1>
         <h3>An attempt to translate them in web</h3>
@@ -146,12 +149,37 @@
 
     <section class="alternating-background section-slowInOut step" data-y="0" data-x="10000">
       <h1 class="section-heading">Slow in and slow out</h1>
-      <p class="rule-description"></p>
+      <p class="rule-description">aka ease-in-out</p>
 
       <input type="button" value="Play" class="animate-button play" id="play_slowInOut" />
       <input type="button" value="Stop" class="animate-button stop" id="stop_slowInOut" />
       <div class="animation-container">
-        <div class="animating-box"></div>
+        <div class="ease-in">
+          <p>Ease In</p>
+          <div class="animating-box"></div>
+        </div>
+        <div class="ease-out">
+          <p>Ease Out</p>
+          <div class="animating-box"></div>
+        </div>
+        <div class="ease-in-out">
+          <p>Ease In Out</p>
+          <div class="animating-box"></div>
+        </div>
+        <div class="linear">
+          <p>Linear</p>
+          <div class="animating-box"></div>
+        </div>
+        <div class="custom-timing">
+          <p>Custom Timing</p>
+          <div class="animating-box">
+          </div>
+        </div>
+      </div>
+      <div class="custom-styles" contenteditable>
+        <p>
+          animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        </p>
       </div>
     </section>
 
@@ -168,7 +196,7 @@
 
     <section class="alternating-background section-followThrough step" data-y="0" data-x="14000">
       <h1 class="section-heading">Follow through and overlapping action</h1>
-      <p class="rule-description">aka ease-in-out</p>
+      <p class="rule-description"></p>
 
       <input type="button" value="Play" class="animate-button play" id="play_followThrough" />
       <input type="button" value="Stop" class="animate-button stop" id="stop_followThrough" />

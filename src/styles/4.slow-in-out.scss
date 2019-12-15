@@ -11,22 +11,96 @@
     border-radius: 50%;
   }
 
+
   .animating-box {
     top: 50%;
-    transform: translateY(-50%);
     left: 15%;
+    position: relative;
+    transform: translateY(-50%);
   }
 
-  .animate {
-    animation: straight-ahead linear 0.5s infinite;
-  }
+  .animation-container {
+    height: 700px;
+    padding: 25px 100px 25px 25px;
 
-  @keyframes straight-ahead {
-    0% {
-
+    & > div {
+      border-right: 3px solid crimson;
     }
 
-    
+    p {
+      top: 30px;
+      font-size: 1.5em;
+      position: relative;
+    }
+
+    $animation-duration: 5s;
+    $animation-end-position: 90.8%;
+
+    .ease-in {
+      .animate {
+        animation: animate $animation-duration infinite ease-in;
+      }
+    }
+    .ease-out {
+      .animate {
+        animation: animate $animation-duration infinite ease-out;
+      } 
+    }
+    .ease-in-out {
+      .animate {
+        animation: animate $animation-duration infinite ease-in-out;
+      }
+    }
+    .linear {
+      .animate {
+        animation: animate $animation-duration infinite linear;
+      }
+    }
+    .custom-timing {
+      .animate {
+        animation: animate $animation-duration infinite;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+    }
+
+    @keyframes animate {
+      0% {
+        transform: translateY(-50%) skewX(0deg);
+        left: 15%;
+      }
+      8% {
+        transform: translateY(-50%) skewX(10deg);
+        left: 15%;
+      }
+      42% {
+        transform: translateY(-50%) skewX(10deg);
+        left: $animation-end-position;
+      }
+      50% {
+        transform: translateY(-50%) skewX(0deg);
+        left: $animation-end-position;
+      }
+      58% {
+        transform: translateY(-50%) skewX(-10deg);
+        left: $animation-end-position;
+      }
+
+      92% {
+        transform: translateY(-50%) skewX(-10deg);
+        left: 15%;
+      }
+
+      100% {
+        transform: translateY(-50%) skewX(0deg);
+        left: 15%;
+      }
+    }
   }
 
+  .custom-styles {
+    position: relative;
+    font-size: 1.5em;
+    top: -80px;
+    left: 70px;
+  }
 }

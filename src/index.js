@@ -36,7 +36,7 @@ document.querySelector('.illusion-of-life-book').addEventListener('click', funct
 let animateClass = 'animate';
 let animatingBox = '.animating-box'
 
- // SQUASH AND STRETCH
+//START - SQUASH AND STRETCH
 let squashStretchBox = `.section-squash-and-stretch ${animatingBox}`;
 document.getElementById('play_squashAndStretch').addEventListener('click', function(e) {
   document.querySelector(squashStretchBox).classList.add(animateClass);
@@ -53,8 +53,10 @@ document.getElementById('play_anticipation').addEventListener('click', function(
 document.getElementById('stop_anticipation').addEventListener('click', function(e) {
   document.querySelector(anticipationBox).classList.remove(animateClass);
 });
+//START - SQUASH AND STRETCH
 
-// STAGING
+
+//START - STAGING
 let stagingBox = `.section-staging ${animatingBox}`;
 let randomBox = 1;
 let blur = 'blur';
@@ -75,15 +77,38 @@ document.getElementById('stop_staging').addEventListener('click', function(e) {
     element.classList.remove(animateClass);
   });
 });
+//END - STAGING
 
-// STRAIGHT AHEAD
+
+//START - SLOW-IN-OUT
+let slowInOutBox = `.section-slowInOut ${animatingBox}`;
+document.getElementById('play_slowInOut').addEventListener('click', function(e) {
+  document.querySelectorAll(slowInOutBox).forEach(function(val) {
+    val.classList.add(animateClass);
+  });
+});
+document.getElementById('stop_slowInOut').addEventListener('click', function(e) {
+  document.querySelector('.section-slowInOut .animating-box').classList.remove(animateClass);
+  document.querySelectorAll(slowInOutBox).forEach(function(val) {
+    val.classList.remove(animateClass);
+  });
+});
+document.querySelector('.section-slowInOut .custom-styles').addEventListener('blur', function(e) {
+  // update custom timing function
+  // document.querySelector('.section-slowInOut .custom-timing .animating-box').styles
+});
+//END - SLOW-IN-OUT
+
+
+//START - STRAIGHT AHEAD
 let straightAheadBox = `.section-straightAhead ${animatingBox}`;
 document.getElementById('play_straightAhead').addEventListener('click', function(e) {
-  document.querySelector(straightAheadBox).classList.add(animateClass);
+  document.querySelectorAll(straightAheadBox).classList.add(animateClass);
 });
 document.getElementById('stop_straightAhead').addEventListener('click', function(e) {
   document.querySelector(straightAheadBox).classList.remove(animateClass);
 });
+//END - STRAIGHT AHEAD
 
 
 // FOLLOW THROUGH
@@ -92,14 +117,6 @@ document.getElementById('play_followThrough').addEventListener('click', function
 });
 document.getElementById('stop_followThrough').addEventListener('click', function(e) {
   document.querySelector('.section-followThrough .animating-box').classList.remove(animateClass);
-});
-
-// SLOW-IN-OUT
-document.getElementById('play_slowInOut').addEventListener('click', function(e) {
-  document.querySelector('.section-slowInOut .animating-box').classList.add(animateClass);
-});
-document.getElementById('stop_slowInOut').addEventListener('click', function(e) {
-  document.querySelector('.section-slowInOut .animating-box').classList.remove(animateClass);
 });
 
 // ARC
