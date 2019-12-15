@@ -38,6 +38,19 @@ body {
   }
 }
 
+.section-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.session-content-list {
+  li {
+    font-size: 2rem;
+    padding: 5px 0;
+  }
+}
+
 .alternating-background {
   padding: 100px;
   width: 90vw;
@@ -93,23 +106,63 @@ body {
 }
 
 
-.section-heading {
-  font-size: 3.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.session-content-list {
-  li {
-    font-size: 2rem;
-    padding: 5px 0;
-  }
-}
-
 .about-me {
   img {
     width: 400px;
     height: 400px;
+
+    &.profile-picture {
+      box-shadow: 0px 0px 70px 0px;
+    }
+  }
+
+
+  ul {
+    list-style: none;
+    text-align: left;
+  }
+
+  li {
+    font-size: 2em;
+    display: none;
+
+    &.meme {
+      position: absolute;
+
+      &:nth-child(10) {
+        top: 0px;
+        left: 100px;
+      }
+
+      &:nth-child(11) {
+        top: 400px;
+        left: 500px;
+      }
+
+      &:nth-child(12) {
+        top: -400px;
+        left: 300px;
+      }
+
+      &:nth-child(13) {
+        top: -235px;
+        left: 150px;
+      }
+
+      &:nth-child(14) {
+        top: -190px;
+        left: 30px;
+      }
+
+      &:nth-child(15) {
+        top: -190px;
+        left: 200px;
+      }
+    }
+    
+    &.show {
+      display: block;
+    }
   }
 }
 
@@ -119,7 +172,22 @@ body {
     max-width: 600px;
     min-width: 320px;
     height: 70%;
+
+    &.meme {
+      top: 400px;
+      right: 30px;
+      width: 430px;
+      height: 430px;
+      display: none;
+      position: absolute;
+
+      &.show {
+        display: block;
+      }
+    }
+
   }
+
 }
 
 .rule-description {

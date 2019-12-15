@@ -23,6 +23,15 @@ document.querySelector('.prev-slide').addEventListener('click', function(e) {
   }, 200);
 });
 
+
+document.querySelector('.display-next-onclick').addEventListener('click', function (e) {
+  document.querySelector('li:not(.show)').classList.add('show');
+});
+
+document.querySelector('.illusion-of-life-book').addEventListener('click', function(e){
+  document.querySelector('img.meme:not(.show)').classList.add('show');
+});
+
 let animateClass = 'animate';
 let animatingBox = '.animating-box'
 
