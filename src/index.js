@@ -3,7 +3,8 @@ import './styles/styles.scss';
 import './styles/1.squash-and-stretch.scss';
 import './styles/2.anticipation.scss';
 import './styles/3.staging.scss';
-// import './styles/avatar_waleed_face.scss';
+import './styles/4.slow-in-out.scss';
+import './styles/5.straight-ahead.scss';
 import "./impress";
 
 

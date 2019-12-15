@@ -1,0 +1,32 @@
+@import './variables';
+
+.section-straightAhead {
+
+  .play:hover {
+    transition: border-radius 0.3s;
+    border-radius: 50%;
+  }
+
+  .stop:hover {
+    border-radius: 50%;
+  }
+
+  .animating-box {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15%;
+  }
+
+  .animate {
+    animation: straight-ahead linear 0.5s infinite;
+  }
+
+  @keyframes straight-ahead {
+    0% {
+
+    }
+
+    
+  }
+
+}
