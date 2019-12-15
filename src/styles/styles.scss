@@ -140,18 +140,18 @@ body {
       }
 
       &:nth-child(12) {
-        top: -400px;
-        left: 300px;
+        top: -300px;
+        left: 380px;
       }
 
       &:nth-child(13) {
         top: -235px;
-        left: 150px;
+        left: 0px;
       }
 
       &:nth-child(14) {
-        top: -190px;
-        left: 30px;
+        top: 270px;
+        left: -50px;
       }
 
       &:nth-child(15) {
@@ -168,10 +168,10 @@ body {
 
 .inspiration-source-material {
   img {
-    width: 50%;
+    width: 65%;
     max-width: 600px;
     min-width: 320px;
-    height: 70%;
+    height: 80%;
 
     &.meme {
       top: 400px;
