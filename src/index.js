@@ -36,6 +36,7 @@ document.querySelector('.illusion-of-life-book').addEventListener('click', funct
 let animateClass = 'animate';
 let animatingBox = '.animating-box'
 
+
 //START - SQUASH AND STRETCH
 let squashStretchBox = `.section-squash-and-stretch ${animatingBox}`;
 document.getElementById('play_squashAndStretch').addEventListener('click', function(e) {
@@ -44,8 +45,10 @@ document.getElementById('play_squashAndStretch').addEventListener('click', funct
 document.getElementById('stop_squashAndStretch').addEventListener('click', function(e) {
   document.querySelector(squashStretchBox).classList.remove(animateClass);
 });
+//END - SQUASH AND STRETCH
 
 
+//START - ANTICIPATION
 let anticipationBox = `.section-anticipation ${animatingBox}`;
 document.getElementById('play_anticipation').addEventListener('click', function(e) {
   document.querySelector(anticipationBox).classList.add(animateClass);
@@ -53,7 +56,7 @@ document.getElementById('play_anticipation').addEventListener('click', function(
 document.getElementById('stop_anticipation').addEventListener('click', function(e) {
   document.querySelector(anticipationBox).classList.remove(animateClass);
 });
-//START - SQUASH AND STRETCH
+//END - ANTICIPATION
 
 
 //START - STAGING
@@ -95,7 +98,7 @@ document.getElementById('stop_slowInOut').addEventListener('click', function(e) 
 });
 document.querySelector('.section-slowInOut .custom-styles').addEventListener('blur', function(e) {
   // update custom timing function
-  // document.querySelector('.section-slowInOut .custom-timing .animating-box').styles
+  document.querySelector('.section-slowInOut .custom-timing .animating-box').style.animationTimingFunction = e.target.firstElementChild.innerText;
 });
 //END - SLOW-IN-OUT
 
