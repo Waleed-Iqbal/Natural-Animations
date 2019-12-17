@@ -21,14 +21,13 @@
 
   <div id="impress">
 
-    <section class="alternating-background welcome-slide text-center step" data-y="0" data-x="-6000">
+    <section class="alternating-background welcome-slide text-center step" data-y="0" data-x="-6000" data-rotate-x="90">
       <h1 class="title-welcome pt-3">Welcome</h1>
       <h1 class="topic">Natural Animations</h1>
       <h1 class="sub-topic"><span>An Attempt <h5>(with disclaimers)</h5></span> </h1>
     </section>
 
-    <section class="alternating-background speaker-info-slide text-center step" data-y="0" data-x="-4000"
-      data-rotate="-50">
+    <section class="alternating-background speaker-info-slide text-center step" data-y="0" data-x="-4000" data-rotate-y="90">
       <h1 class="section-heading pt-3 heading-1">Khawaja Waleed Iqbal</h1>
       <div id="AvatarWaleedFace">
         <div class="avatar--glasses">
@@ -56,11 +55,9 @@
             <li> - Loves animation, pizza</li>
             <li>&nbsp;&nbsp;&nbsp; and Memes</li>
             <li class="meme"> <img src="./assets/meme-1.jpg"> </li>
+            <li class="meme"> <img src="./assets/yoda-1.jpeg"> </li>
             <li class="meme"> <img src="./assets/meme-2.jpg"> </li>
-            <li class="meme"> <img src="./assets/meme-3.jpg"> </li>
-            <li class="meme"> <img src="./assets/meme-1.jpg"> </li>
-            <li class="meme"> <img src="./assets/meme-2.jpg"> </li>
-            <li class="meme"> <img src="./assets/meme-3.jpg"> </li>
+            <li class="meme"> <img src="./assets/drake-1.jpg"> </li>
           </ul>
         </div>
         <div class="col-6">
@@ -74,13 +71,13 @@
       data-rotate="90">
       <h1 class="section-heading pt-3">Inspired by / source material</h1>
       <img class="mt-5 pt-5 illusion-of-life-book" src="./assets/book.png" alt="The Illusion of Life" />
-      <img class="meme" src="./assets/meme-3.jpg" />
+      <img class="meme" src="./assets/aint-nobody.jpg" />
     </section>
 
     <section class="alternating-background session-content-list border-top border-secondary pt-3 pl-5 step" data-y="0"
       data-x="2000" data-rotate="50">
       <div class="mt-5 text-center">
-        <h1 class="display-3 font-weight-bold">12 rules of animation</h1>
+        <h1 class="display-3 font-weight-bold">Some rules of animation</h1>
         <h3>An attempt to translate them in web</h3>
       </div>
       <ol class="py-5 mt-5">
@@ -88,13 +85,8 @@
         <li>Anticipation</li>
         <li>Staging</li>
         <li>Slow in and slow out</li>
-        <li>Straight ahead action and pose to pose</li>
         <li>Follow through and overlapping action</li>
         <li>Arc</li>
-        <li>Secondary action</li>
-        <li>Timing</li>
-        <li>Exaggeration</li>
-        <li>Solid drawing</li>
         <li>Appeal</li>
       </ol>
     </section>
@@ -183,29 +175,19 @@
       </div>
     </section>
 
-    <section class="alternating-background section-straightAhead step" data-y="0" data-x="12000">
-      <h1 class="section-heading">Straight ahead action and pose to pose</h1>
-      <p class="rule-description"></p>
-
-      <input type="button" value="Play" class="animate-button play" id="play_straightAhead" />
-      <input type="button" value="Stop" class="animate-button stop" id="stop_straightAhead" />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-followThrough step" data-y="0" data-x="14000">
-      <h1 class="section-heading">Follow through and overlapping action</h1>
-      <p class="rule-description"></p>
+    <section class="alternating-background section-followThrough step" data-y="0" data-x="12000">
+      <h1 class="section-heading">Overlapping action</h1>
+      <p class="rule-description">Things usually don't start or end their motion at once.</p>
 
       <input type="button" value="Play" class="animate-button play" id="play_followThrough" />
       <input type="button" value="Stop" class="animate-button stop" id="stop_followThrough" />
       <div class="animation-container">
-        <div class="animating-box"></div>
+        <div draggable="true" class="animating-box draggable"></div>
+        <div draggable="true" class="animating-box overlapping-action"></div>
       </div>
     </section>
 
-    <section class="alternating-background section-arc step" data-y="0" data-x="16000">
+    <section class="alternating-background section-arc step" data-y="0" data-x="14000">
       <h1 class="section-heading">Arc</h1>
       <p class="rule-description"></p>
 
@@ -216,51 +198,7 @@
       </div>
     </section>
 
-    <section class="alternating-background section-secondaryAction step" data-y="0" data-x="18000">
-      <h1 class="section-heading">Secondary action</h1>
-      <p class="rule-description"></p>
-
-      <input type="button" value="Play" class="animate-button play" id="play_secondaryAction" />
-      <input type="button" value="Stop" class="animate-button stop" id="stop_secondaryAction" />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-timing step" data-y="0" data-x="20000">
-      <h1 class="section-heading">Timing</h1>
-      <p class="rule-description"></p>
-
-      <input type="button" value="Play" class="animate-button play" id="play_timing" />
-      <input type="button" value="Stop" class="animate-button stop" id="stop_timing" />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-exaggeration step" data-y="0" data-x="22000">
-      <h1 class="section-heading">Exaggeration</h1>
-      <p class="rule-description"></p>
-
-      <input type="button" value="Play" class="animate-button play" id="play_exaggeration" />
-      <input type="button" value="Stop" class="animate-button stop" id="stop_exaggeration" />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-solidDrawing step" data-y="0" data-x="24000">
-      <h1 class="section-heading">Solid drawing</h1>
-      <p class="rule-description"></p>
-
-      <input type="button" value="Play" class="animate-button play" id="play_solidDrawing" />
-      <input type="button" value="Stop" class="animate-button stop" id="stop_solidDrawing" />
-      <div class="animation-container">
-        <div class="animating-box"></div>
-      </div>
-    </section>
-
-    <section class="alternating-background section-appeal step" data-y="0" data-x="26000">
+    <section class="alternating-background section-appeal step" data-y="0" data-x="16000">
       <h1 class="section-heading">Appeal</h1>
       <p class="rule-description"></p>
 
@@ -271,8 +209,7 @@
       </div>
     </section>
 
-    <section class="alternating-background session-content-list border-top border-secondary pt-3 pl-5 step" data-y="0"
-      data-x="28000">
+    <section class="alternating-background session-content-list border-top border-secondary pt-3 pl-5 step" data-y="0" data-x="28000">
       <div class="text-center">
         <h1 class="display-3 font-weight-bold">Recap</h1>
         <p class="rule-description"></p>
@@ -282,13 +219,8 @@
         <li>Anticipation</li>
         <li>Staging</li>
         <li>Slow in and slow out</li>
-        <li>Straight ahead action and pose to pose</li>
         <li>Follow through and overlapping action</li>
         <li>Arc</li>
-        <li>Secondary action</li>
-        <li>Timing</li>
-        <li>Exaggeration</li>
-        <li>Solid drawing</li>
         <li>Appeal</li>
       </ol>
     </section>
