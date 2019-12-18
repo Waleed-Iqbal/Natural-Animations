@@ -8,14 +8,15 @@
 
 $dimension-value: 80px;
 $backgroundColor: beige;
+
 @mixin width-height {
-    width: $dimension-value;
-    height: $dimension-value;
+  width: $dimension-value;
+  height: $dimension-value;
 }
 
 @mixin custom-width-height($w, $h) {
-   width: $w;
-   height: $h;
+  width: $w;
+  height: $h;
 }
 
 .width-height {
@@ -30,14 +31,16 @@ $backgroundColor: beige;
   font-size: 18px;
   text-transform: uppercase;
 
-  > span, img {
-      // position: absolute;
-      margin-left: 170px;
-      left: calc(50vw - 100px);
-      top: 40vh;
-      p {
-          margin-top: 40px
-      }
+  >span,
+  img {
+    // position: absolute;
+    margin-left: 170px;
+    left: calc(50vw - 100px);
+    top: 40vh;
+
+    p {
+      margin-top: 40px
+    }
   }
 }
 
@@ -51,7 +54,7 @@ $backgroundColor: beige;
 
 @keyframes loader-1 {
   to {
-     transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -67,7 +70,7 @@ $backgroundColor: beige;
 
 @keyframes loader-2 {
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -83,12 +86,14 @@ $backgroundColor: beige;
 
 @keyframes loader-3 {
   to {
-      transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 
 .loader-3-inner {
-  top: -50px;
+  top: 17px;
+  left: 17px;
+  position: absolute;
   @include custom-width-height(20px, 20px);
   border-top: 10px solid transparent;
   border-left: 10px solid salmon;
@@ -99,7 +104,7 @@ $backgroundColor: beige;
 
 @keyframes loader-3-inner {
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -113,15 +118,15 @@ $backgroundColor: beige;
 
 @keyframes loader-5 {
   0% {
-      transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 
   50% {
-      transform: rotate(-180deg);
+    transform: rotate(-180deg);
   }
 
   100% {
-      transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
 
@@ -137,15 +142,17 @@ $backgroundColor: beige;
 
 @keyframes loader-6 {
   0% {
-      transform: rotate(360deg);
-      box-shadow: 0 0 0px 0px lightskyblue;
+    transform: rotate(360deg);
+    box-shadow: 0 0 0px 0px lightskyblue;
   }
+
   50% {
-      transform: rotate(0deg);
-      box-shadow: 0 0 10px 10px lightskyblue;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px 10px lightskyblue;
   }
+
   100% {
-      transform: rotate(-360deg);
-      box-shadow: 0 0 0px 0px lightskyblue;
+    transform: rotate(-360deg);
+    box-shadow: 0 0 0px 0px lightskyblue;
   }
 }
