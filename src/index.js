@@ -6,6 +6,7 @@ import './styles/3.staging.scss';
 import './styles/4.slow-in-out.scss';
 import './styles/5.straight-ahead.scss';
 import './styles/6.follow-through.scss';
+import './styles/7.appeal.scss';
 import "./impress";
 
 impress().init();
@@ -179,11 +180,11 @@ document.getElementById('stop_arc').addEventListener('click', function (e) {
 // END - ARC
 
 // START - APPEAL
-document.getElementById('play_appeal').addEventListener('click', function (e) {
-  document.querySelector('.section-appeal .animating-box').classList.add(animateClass);
-});
-document.getElementById('stop_appeal').addEventListener('click', function (e) {
-  document.querySelector('.section-appeal .animating-box').classList.remove(animateClass);
-});
+// document.getElementById('play_appeal').addEventListener('click', function (e) {
+//   document.querySelector('.section-appeal .animating-box').classList.add(animateClass);
+// });
+// document.getElementById('stop_appeal').addEventListener('click', function (e) {
+//   document.querySelector('.section-appeal .animating-box').classList.remove(animateClass);
+// });
 // END - APPEAL
 
