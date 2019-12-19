@@ -1,0 +1,38 @@
+@import './variables';
+
+.section-followThrough {
+
+  .overlapping-action {
+    background-color: lightsteelblue;
+  }
+  
+  .draggable {
+    background-color: lightcoral;
+    cursor: pointer;
+    height: 80px;
+    width: 120px;
+    margin: 2px;
+    border: 2px dashed black;
+  }
+
+  .empty {
+    height: 90px;
+    width: 130px;
+    display: inline-block;
+    border: 3px solid salmon;
+    margin: 30px;
+  }
+
+  .hold {
+    border: 2px dashed darkorange;
+  }
+
+  .hovered {
+    background-color: lightblue;
+    border: 2px solid black;
+  }
+
+  .invisible {
+    display: none;
+  }
+}

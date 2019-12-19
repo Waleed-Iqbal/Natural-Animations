@@ -114,44 +114,44 @@ document.querySelector('.section-slowInOut .custom-styles').addEventListener('bl
 //   var sigmoid = function(x) {
 //     return (x / (1 + Math.abs(x)));
 //   };
-  
+
 //   // Stores X and Y coordinates of Mouse
 //   var MousePosition = {
 //     x: 0,
 //     y: 0
 //   };
-  
+
 //   // Stores X and Y Coordinates of the Card
 //   var CardPosition = {
 //     x: 0,
 //     y: 0
 //   };
-  
+
 //   var xVelocity = 0;
 //   var rotation = 0;
-  
+
 //   var update = function() {
 //     xVelocity = (MousePosition.x - CardPosition.x);
-    
+
 //     CardPosition.x = MousePosition.x;
 //     CardPosition.y = MousePosition.y;
-    
+
 //   rotation = rotation * 0.9 + (sigmoid(xVelocity) * 1.5);
-    
+
 //     // Update the position of card
 //     card.style.top = CardPosition.y + 'px';
 //     // Subtract (Width of card / 2 = 125) to centre cursor on top
 //     card.style.left = (CardPosition.x - 125) + 'px';
-    
+
 //     if (Math.abs(rotation) < 0.01) rotation = 0;
-    
+
 //     card.style.transform = `rotate(${rotation}deg)`;
-    
+
 //     requestAnimationFrame(update); 
 //   };
 //   update();
-  
-  
+
+
 //   document.querySelector('.section-followThrough .animating-box.overlapping-action').addEventListener('mousemove', function (e) {
 //     update();
 
@@ -163,11 +163,49 @@ document.querySelector('.section-slowInOut .custom-styles').addEventListener('bl
 
 // });
 
-document.querySelector('.section-followThrough .animating-box.draggable').addEventListener('', function () {
 
+// fill
+let draggable = document.querySelector('.section-followThrough .animation-container .draggable');
+let empties = document.querySelectorAll('.section-followThrough .animation-container .empty');
 
+draggable.addEventListener('dragstart', dragStart);
+draggable.addEventListener('dragend', dragEnd);
 
-});
+function dragStart(e) {
+  this.className += ' hold';
+  setTimeout(() => {
+    this.className = 'invisible'
+  }, 0);
+}
+
+function dragEnd(e) {
+  this.className = 'draggable';
+}
+
+for(let empty of empties) {
+  empty.addEventListener('dragover', dragOver);
+  empty.addEventListener('dragenter', dragEnter);
+  empty.addEventListener('dragleave', dragLeave);
+  empty.addEventListener('drop', dragDrop);
+}
+
+function dragOver(e) {
+  e.preventDefault();
+}
+
+function dragEnter(e) {
+  e.preventDefault();
+  this.className += " hovered";
+}
+
+function dragLeave(e) {
+  this.className = "empty";
+}
+
+function dragDrop(e) {
+  this.className = "empty";
+  this.append(draggable);
+}
 //END - FOLLOW THROUGH
 
 //START - ARC
