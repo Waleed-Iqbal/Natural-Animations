@@ -218,12 +218,3 @@ document.getElementById('stop_arc').addEventListener('click', function (e) {
 });
 // END - ARC
 
-// START - APPEAL
-// document.getElementById('play_appeal').addEventListener('click', function (e) {
-//   document.querySelector('.section-appeal .animating-box').classList.add(animateClass);
-// });
-// document.getElementById('stop_appeal').addEventListener('click', function (e) {
-//   document.querySelector('.section-appeal .animating-box').classList.remove(animateClass);
-// });
-// END - APPEAL
-
