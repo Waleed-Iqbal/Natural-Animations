@@ -2,8 +2,15 @@
 
 .section-followThrough {
 
+  .animation-container.overlapping-action-container {
+    position: relative;
+  }
+
   .overlapping-action {
     background-color: lightsteelblue;
+    height: 80px;
+    width: 210px;
+    position: absolute;
   }
   
   .draggable {
