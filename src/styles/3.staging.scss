@@ -2,6 +2,24 @@
 
 .section-staging {
 
+  .rule-description {
+    span:hover {
+      display: inline-block;
+      cursor: pointer;
+      animation: lookAndFeel 0.8s linear infinite;
+      
+    }
+
+    @keyframes lookAndFeel {
+      0%, 100% {
+        transform: rotate(0deg) scale(1);
+      }
+      50% {
+        transform: rotate(15deg) scale(1.1);
+      }
+    }
+  }
+
   .play:hover {
     transform: scale(0.9);
 
